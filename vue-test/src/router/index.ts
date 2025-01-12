@@ -2,6 +2,7 @@ import { createRouter, createWebHashHistory } from 'vue-router';
 import HomeView from '@/views/HomeView.vue';
 import AboutView from '@/views/AboutView.vue';
 import TestView from '@/views/TestView.vue';
+import ManyView from '@/views/ManyView.vue';
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -16,6 +17,10 @@ const router = createRouter({
       name: 'about',
       // component: () => import('../views/AboutView.vue'),
       component: AboutView,
+    },
+    {
+      path: '/many',
+      component: ManyView,
     },
     {
       path: '/:pathMatch(.*)*',

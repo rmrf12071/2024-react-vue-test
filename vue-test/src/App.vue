@@ -10,6 +10,7 @@ import { RouterLink, RouterView } from 'vue-router';
       <RouterLink to="/page1">Page1</RouterLink>
       <RouterLink to="/page2">Page2</RouterLink>
       <RouterLink to="/page3">Page3</RouterLink>
+      <RouterLink to="/many">Many</RouterLink>
     </nav>
   </header>
 
