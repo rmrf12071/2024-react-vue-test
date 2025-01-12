@@ -16,4 +16,26 @@ export default [
   ...pluginVue.configs['flat/essential'],
   ...vueTsEslintConfig(),
   skipFormatting,
+
+  {
+    languageOptions: {
+      parserOptions: {
+        parser: '@typescript-eslint/parser',
+        sourceType: 'module',
+        ecmaFeatures: {
+          jsx: true,
+        },
+      },
+    },
+    rules: {
+      'vue/block-lang': [
+        'error',
+        {
+          script: {
+            lang: ['ts', 'tsx'],
+          },
+        },
+      ],
+    },
+  },
 ]
